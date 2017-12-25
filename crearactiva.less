@@ -1,0 +1,621 @@
+
+
+//Open Sans
+
+.familia-1 (@fuente:~"'Open Sans', sans-serif") {
+    font-family:@fuente !important;
+}
+//Roboto Condensed
+//Montserrat
+.familia-2 (@fuente:~"'Montserrat', sans-serif") {
+    font-family:@fuente !important;
+}
+
+.familia-3 (@fuente:~"'Roboto Condensed', sans-serif") {
+    font-family:@fuente !important;
+}
+
+
+
+//--------------------------------------------------------------
+//COLORS
+
+
+// Color primario
+//verde--------------
+@verde:#8EC74A;
+
+//verde-dark
+	@verde-d1x: saturate(@verde, 1%);
+@verde-d1: darken(@verde-d1x, 5%); //-------
+
+	@verde-d2x: saturate(@verde, 6%);
+@verde-d2: darken(@verde-d2x, 9%); //-------
+
+	@verde-d3x: saturate(@verde, 10%);
+@verde-d3: darken(@verde-d3x, 14%); //-------
+
+
+
+//verde-light
+	@verde-l1x: saturate(@verde, 1%);
+@verde-l1: lighten(@verde-l1x, 5%); //-------
+
+	@verde-l2x: saturate(@verde, 6%);
+@verde-l2: lighten(@verde-l2x, 9%); //-------
+
+	@verde-l3x: saturate(@verde, 10%);
+@verde-l3: lighten(@verde-l3x, 14%); //-------
+
+
+//--------------------------------------------------------------
+
+
+// Color secundario
+//azul--------------#854690
+@azul:#146898;
+.azul {color: @azul;}
+
+//azul-dark
+	@azul-d1x: saturate(@azul, 1%);
+@azul-d1: darken(@azul-d1x, 5%); //-------
+
+	@azul-d2x: saturate(@azul, 6%);
+@azul-d2: darken(@azul-d2x, 9%); //-------
+
+	@azul-d3x: saturate(@azul, 10%);
+@azul-d3: darken(@azul-d3x, 14%); //-------
+
+
+//-azullight
+	@azul-l1x: saturate(@azul, 1%);
+@azul-l1: lighten(@azul-l1x, 5%); //-------
+
+	@azul-l2x: saturate(@azul, 6%);
+@azul-l2: lighten(@azul-l2x, 9%); //-------
+
+	@azul-l3x: saturate(@azul, 10%);
+@azul-l3: lighten(@azul-l3x, 14%); //-------
+
+
+//--------------------------------------------------------------
+
+// Color Gris
+
+//gris light 353935 aaaaaa
+@gris:#8f9a8f;
+
+//gris-dark
+	@gris-d1x: saturate(@gris, 0%);
+@gris-d1: darken(@gris-d1x, 5%); //-------
+
+	@gris-d2x: saturate(@gris, 0%);
+@gris-d2: darken(@gris-d2x, 9%); //-------
+
+	@gris-d3x: saturate(@gris, 0%);
+@gris-d3: darken(@gris-d3x, 14%); //-------
+
+	@gris-d4x: saturate(@gris, 0%);
+@gris-d4: darken(@gris-d4x, 19%); //-------
+
+
+
+
+//-grislight
+	@gris-l1x: saturate(@gris, 0%);
+@gris-l1: lighten(@gris-l1x, 5%); //-------
+
+	@gris-l2x: saturate(@gris, 0%);
+@gris-l2: lighten(@gris-l2x, 9%); //-------
+
+	@gris-l3x: saturate(@gris, 0%);
+@gris-l3: lighten(@gris-l3x, 14%); //-------
+
+	@gris-l4x: saturate(@gris, 0%);
+@gris-l4: lighten(@gris-l4x, 24%); //-------
+
+
+//COLORS ENDS
+//--------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+#top-header {background-color: @verde;}
+
+#top-menu a {color: #fff;}
+
+
+#top-menu li.current-menu-item > a {color: #fff;}
+
+//Hamburger Menu icon   
+.mobile_menu_bar:before, .mobile_menu_bar:after  {color: #ffffff !important;}
+
+
+@media only screen and (min-width: 981px){
+.et-fixed-header#top-header {
+  //background-color: @azul;
+}
+}
+
+@media only screen and (min-width: 981px){
+.et-fixed-header #top-menu li.current-menu-item > a  {
+  color: @verde !important;
+}
+}
+
+@media only screen and (min-width: 981px){
+.et-fixed-header #top-menu a {
+  color: #fff !important;
+}
+}
+
+
+
+// Hamburger Menu side background
+body #page-container .et_slide_in_menu_container {
+    background: @azul !important;
+}
+
+
+
+
+
+
+
+	
+.linea-1 {border-bottom: 1px solid @gris-l4 !important;}
+
+
+
+
+
+
+
+#suscribirse  {background-color: @azul; padding: 10px 5px;}
+
+
+#logo {
+    max-height: 105px !important;
+    padding: 15px !important;
+    margin-top: -10px !important;
+}
+
+/* MENU NO MOBILE ubicacion */
+
+// Menú impedir movimiento top bottom
+#et-top-navigation {
+    padding-top: 49px !important;
+}
+
+@media only screen and (min-width: 981px){
+.et_header_style_left .et-fixed-header #et-top-navigation, .et_header_style_split .et-fixed-header #et-top-navigation {
+  padding-top: 49px !important;
+}
+}
+// Menú impedir movimiento top bottom ends
+
+//MOBILE menu propiedades
+.mobile_menu_bar:before {color: @azul;}
+.et_mobile_menu {border-top: 3px solid @azul;}
+
+
+
+
+
+//HEADERS
+h1 {font-size: 34px; color: @azul; font-weight: 700;}
+h2 {font-size: 27px; color: @verde-l2; font-weight: 500;}
+h3 {font-size: 24px; color: @azul; font-weight: 400;}
+h4 {font-size: 21px; color: @gris-d3; font-weight: 700;}
+h5 {font-size: 19px; color: @azul; font-weight: 500;}
+h6 {font-size: 17px; color: @azul;font-weight: 700;letter-spacing: 0; font-weight: 500;}
+
+
+#left-area .post-meta {
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
+// MAIN HEADER
+#main-header {background-color:@verde;}
+
+//FOOTER
+.textwidget H4 {
+	color: @azul-l3;
+    //text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+	padding-bottom: 3px;
+}
+.footer-widget h4{color: @verde-l1;}
+
+
+.textwidget {
+	line-height: 1.4;
+}
+
+
+
+#footer-widgets .footer-widget li:before { 
+    border-color: @verde-l2;
+}
+
+
+
+
+#blurbs-home-content-01 {background-color: @verde; padding: 40px 5px;}
+
+#blurbs-home-01  .et-pb-icon {color: #fff !important;}
+#blurbs-home-01 .et_pb_main_blurb_image {margin-bottom: 10px;}
+#blurbs-home-01 .et_pb_blurb h4 a {color: #fff !important;}
+#blurbs-home-01 .et_pb_blurb p {line-height: 1.5em;color: #fff !important;}
+#blurbs-home-01 div.et_pb_blurb_description {color: #fff !important;}
+
+
+
+
+
+
+
+//--------------------------------------------------------------
+//LAYOUT INJERCTOR
+#pleca-menu {background-color: @azul-l1; min-height:4px;}
+#blurbs-asmenu {background-color: @azul;padding: 5px 5px;}
+#dli_widget-2 {width:100%;margin:0;}
+
+
+
+
+
+
+//--------------------------------------------------------------
+
+//WIDGET
+.et_pb_widget {list-style: none;}
+
+
+.textwidget p {
+   // border-bottom: 1px solid #545a54;
+    //padding: 0px 0px 10px;
+    //margin-bottom: 19px;
+}
+
+#contacto-sb p {
+	.linea-1;
+}
+#contacto-sb H4 {
+	color:@azul;
+}
+
+
+
+// FOOTER ENDS
+
+
+
+//------ CALDERA FORMS ---------
+/*** THIS CHANGES THE LOOK OF THE FORM FIELDS - I RAISED THE FONT SIZE THIS TIME ***/
+#main-footer .caldera-grid .form-control {
+    font-size: 17px;
+    padding: 9px;
+    height: auto;
+    box-shadow: none;
+	//background: rgb(23, 41, 53);
+	//background: rgba(53, 57, 53, 0.9);
+	background: #363935;
+    color: #fff !important;
+    //border: none;
+	border: 2px solid #484848;
+}
+ 
+/*** THIS CHANGES THE BUTTON STYLE ***/
+.caldera-grid input[type=submit] {
+    padding: 8px 14px;
+    border-radius: 1px;
+    background: @verde;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    float: right;
+    transition: all 0.3s ease-in-out;
+}
+ 
+/*** THIS CHANGES THE BUTTON HOVER STYLE ***/   
+.caldera-grid input[type=submit]:hover {
+	background: @verde-l3;
+    color: #fff;
+}
+ 
+/*** THIS REMOVES THE GLOW EFFECT COMPLETELY ***/
+#main-footer .caldera-grid .form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+
+
+#main-footer .caldera-grid .form-control.parsley-error, select.form-control.parsley-error, textarea.form-control.parsley-error {
+    color: #e53633;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+#main-footer .caldera-grid .has-error .help-block {}
+
+
+#main-footer .caldera-grid .form-control.parsley-success, select.form-control.parsley-success, textarea.form-control.parsley-success {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+
+
+#main-footer .caldera-grid label {
+	.familia-1;
+    //color: rgba(255, 255, 255, 0.7);
+	color:#fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+// hr  divider
+#main-footer .caldera-grid hr {border-top: 1px solid #545454;}
+
+
+//CALDERA suscribir 1
+div#suscribir1 {
+    //padding: 30px;
+    //background-color: #f5f5f5;
+}
+
+div#suscribir1 h3 {line-height: 1.1;padding-bottom: 5px; font-weight: 600;}
+div#suscribir1 p {line-height: 1.1; padding-bottom: 10px;}
+
+//Botón normal
+.caldera-grid .btn-default {
+    color: #fff;
+    background-color: #909090;
+    border-color: #417863;
+    /* font-weight: 400; */
+}
+
+
+span.field_required, span.parsley-required {color:@azul-l3 !important;}
+
+//------ CALDERA FORMS ENDS ---------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------ Advanced Woo Search ---------
+
+.aws-search-result .aws_result_title {
+    color: #333;
+    line-height: 1.2;
+    font-size: 16px;
+}
+
+
+#aws_widget-4 {
+    margin-bottom: 0;
+    padding-left: 25px;
+}
+
+
+.aws-container .aws-search-field {
+    padding: 1px !important;
+    color: #3e3e3e !important;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+
+
+
+//------ Advanced Woo Search ENDS ---------
+
+
+
+//BLOCKQUOTE
+
+blockquote {
+    margin: 20px 0 30px;
+    padding-left: 20px;
+    border-left: 2px solid;
+    border-color: @gris-l3;
+    font-size: 18px;
+    color: @gris-d3;
+    font-weight: 700;
+}
+
+
+
+#contact-middle h4 {
+    color: @gris-d3;
+    font-weight: 400;
+    font-size: 19px !important;
+    text-transform: uppercase;
+}
+
+
+//CPT layouts
+//MARCAS single page
+#secciones-headers {
+    //text-align: center;
+    color:@azul;
+}
+
+
+#secciones-headers h1 {
+    font-size: 43px;
+    //color: #fefefe;
+    font-weight: 700;
+    padding-bottom: 1px;
+}
+
+#secciones-headers h5, #secciones-headers p {
+    font-size: 18px;
+    line-height: 1.3;
+    color:@azul;
+    padding-top: 5px;
+    //color: #fefefe;
+}
+//MARCAS ends
+
+
+//PAGES
+.page .main_title {
+    display: none !important;
+}
+
+
+
+#gw_go_portfolio_home-mosaic .gw-gopf-style-vario .gw-gopf-post-content {
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 15px;
+    padding: 20px;
+    background-color: @verde !important;
+}
+#gw_go_portfolio_home-mosaic .gw-gopf-style-vario .gw-gopf-post-content a {
+    color: #ffffff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Slider Home
+#slider-home {
+    background-color: @verde-d3 !important;
+}
+//title
+ #slider-home h2.et_pb_slide_title {
+    .familia-2;
+    font-size: 38px;
+    font-weight: 700 !important;
+}
+//title mobile
+@media (max-width: 980px){
+ #slider-home h2.et_pb_slide_title {
+    font-size: 32px;
+    font-weight: 700;
+     line-height: 1.2;
+}
+}
+//contenido
+#slider-home .et_pb_slide_content {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+@media (max-width: 980px){
+#slider-home .et_pb_slide_content {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+}
+
+
+#slider-home .et_pb_button {
+    padding: .1em 1em;
+    background-color: @verde;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}     
+//description
+#slider-home .et_pb_slide_description {
+    background:#00000030;
+    min-height:460px;
+    width: 35%;
+    min-width: 300px;
+    float:left;
+    padding: 57px 45px 50px 35px!important;
+    text-align:left
+
+}
+
+
+//extra slide transitions
+#slider-home .et-pb-active-slide .et_pb_slide_description {
+    animation-name: fadeIn;
+}
+#slider-home .et_pb_slide.et-pb-active-slide {
+    transition: opacity .3s!important
+}
+  
+@media all and (max-width: 1252px) {
+    #slider-home.et_pb_post_slider_0 .et_pb_slide {
+        background-size: 90%
+    }
+}
+@media all and (max-width: 980px) {
+    #slider-home.et_pb_post_slider_0 .et_pb_slide {
+        background-size: 100%;
+        background-position: top center;
+    }
+}
+//Footer OJO REVISAR usado en CALDERA
+#main-footer {
+    background-color: @azul;
+}
+#footer-info {
+    float: left;
+    padding-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#footer-bottom .et-social-icon a {
+    color: #fff;
+}
+
+
+//#main-header {border-bottom-width: 5px;border-bottom-color: #146898;}
+
+
+
+
+    
